@@ -27,12 +27,12 @@ def send_answer(answer, lessonURL):
     wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '.submit-submission')))
     browser.find_element(By.CSS_SELECTOR, '.submit-submission').click()
     wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, 'button[class ="submit-submission"]' )))
-    browser.find_element(By.CSS_SELECTOR, 'button[class ="submit-submission"]')
+    browser.find_element(By.CSS_SELECTOR, 'button[class ="submit-submission"]') 
 
 
     ## Всё это дело вызываю в конце каждого задания, сохраняя ответ в answer и указывая ручками ссылку на урок - lessonURL в файле с уроком
     ## Код выше работает только для заданий, которые ещё не были выполнены - поленился добавить эту фичу, поэтому на сделанных уже заданиях будете получать InvalidElementStateException. Для проверки можно самому нажать на странице "Выполнить ещё раз" и прогнать этот код
-    
+    ##Тест для гихаба
     
 
 
